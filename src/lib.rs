@@ -173,7 +173,7 @@ impl Path {
         let large_arc = if large_arc { 1 } else { 0 };
         let sweep = if sweep { 1 } else { 0 };
         fmt::write(&mut self.inner, 
-            format_args!("A {} {} {} {} {} {} {}", rx, ry, xrot, large_arc, sweep, dx, dy)
+            format_args!("a {} {} {} {} {} {} {}", rx, ry, xrot, large_arc, sweep, dx, dy)
         ).unwrap();
         self
     }

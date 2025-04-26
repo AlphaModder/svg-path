@@ -3,8 +3,9 @@ use std::{fmt::{self, Display, Formatter}, f32::consts::PI};
 /// The data associated with an SVG path. Implements `Display` for inclusion in format strings
 /// like this:
 /// ```rust
+/// # use svg_path::Path;
 /// let path = Path::new();
-/// let tag = format!(r#"<path d="{}"></path>"#);
+/// let tag = format!(r#"<path d="{}"></path>"#, path);
 /// ```
 #[derive(Clone)]
 pub struct Path {
